@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Space App Hackathon</title> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='stylesheet.css') }} ">   
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.pydata.org/bokeh/release/bokeh-1.3.0.min.css" rel="stylesheet" type="text/css">
+  <script src="https://cdn.pydata.org/bokeh/release/bokeh-1.3.0.min.js"></script>    
+</head><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> 
+  <script type="text/javascript" src="/static/jscripts.js" async></script>
+</head>
+<header>
+	<nav class="navbar navbar-light bg-light">
+    <a class="navbar" href="/"><span class="mb-0 h1">Data Imputation Visualization</span><a>
+  </nav>
+</header>
+<body>
+
+    <div class="inputs">		
+
+      <div class="btn-inputs">
+        <form id="form-upload">
+
+            <input class="file" type="file" name="file" autocomplete="off" required>
+
+          <br>
+
+          <input class="submit-button" type ='submit' value='Plot from file' >
+		    </form> 
+        </div>
+
+      <div class="btn-inputs">
+        <form id="form-impute">
+      <input class="submit-button" type='submit' value="Impute Data">
+        </form>
+      </div>
+
+      <div class="btn-inputs">
+        <form id="form-ml">
+          <input class="submit-button" type='submit' value="Process ML">
+        </form>
+      </div>
+
+      </div>
+
+      <br>
+
+      <div class="outer-div">
+        <div class='panel panel-default'>
+          <div class="panel-body">
+            <div id="plot-content">
+
+          </div>
+        </div>
+    </div>
+  </div>
+
+</body>
+</html>

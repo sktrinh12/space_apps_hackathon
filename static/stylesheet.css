@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+.inputs {
+  display:table;
+}
+
+.btn-inputs {
+  padding:5px;
+  display:table-cell;
+}
+
+div#plot-content {
+  width:75%;
+}
+
+.navbar{
+  background-color:#002d60;
+}
+
+.outer-div {
+  width:75%;
+}
+
